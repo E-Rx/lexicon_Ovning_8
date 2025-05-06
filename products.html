@@ -35,6 +35,7 @@
     .section-header {
       color: #6f4e37;
       border-bottom: 2px solid #c19a6b;
+      padding-bottom: 10px;
     }
 
     .hero-section {
@@ -46,9 +47,9 @@
     }
 
     .card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
+      height: 200px;
+      object-fit: cover;
+    }
   </style>
 
 
@@ -102,8 +103,8 @@
           role="tab" aria-controls="machines" aria-selected="true">Coffee Machines</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="kaffeparty-tab" data-bs-toggle="pill" data-bs-target="#coffeeparty" type="button"
-          role="tab" aria-controls="kaffeparty" aria-selected="false">Coffee Party</button>
+        <button class="nav-link" id="coffeeparty-tab" data-bs-toggle="pill" data-bs-target="#coffeeparty" type="button"
+          role="tab" aria-controls="coffeeparty" aria-selected="false">Coffee Party</button>
       </li>
     </ul>
 
@@ -111,80 +112,81 @@
     <div class="tab-content" id="productsTabContent">
       <!-- Coffee Machines -->
       <div class="tab-pane fade show active" id="machines" role="tabpanel" aria-labelledby="machines-tab">
-        <h2 class="section-header mb-4" style="color: #6f4e37; border-bottom: 2px solid #c19a6b; padding-bottom: 10px;">
+        <h2 class="section-header mb-4">
           Our Coffee Machines</h2>
         <p class="mb-4">Discover our selection of professional coffee machines for businesses. All our machines come
           with a 2-year warranty and maintenance service included.</p>
 
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Coffee Machine 1 -->
-            <div class="col">
-                <div class="card product-card h-100 d-flex flex-column">
-                    <img src="images/machine_pro2000.png" class="card-img-top" alt="Expresso Pro 2000">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h5 class="card-title mb-0">Expresso Pro 2000</h5>
-                            <span class="badge bg-primary text-white">499 €</span>
-                        </div>
-                        <p class="card-text">A reliable machine for your office needs. Ideal for small teams.</p>
-                        <p class="fw-semibold mb-2">Capacity: 50 cups/day</p>
-                        <ul class="list-unstyled mb-3">
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Simple to use</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Fast brewing time</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Compact design</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary w-100">Learn more</a>
-                    </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Coffee Machine 1 -->
+          <div class="col">
+            <div class="card product-card h-100 d-flex flex-column">
+              <img src="images/machine_pro2000.png" class="card-img-top" alt="Expresso Pro 2000">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h5 class="card-title mb-0">Expresso Pro 2000</h5>
+                  <span class="badge bg-primary text-white">499 €</span>
                 </div>
+                <p class="card-text">A reliable machine for your office needs. Ideal for small teams.</p>
+                <p class="fw-semibold mb-2">Capacity: 50 cups/day</p>
+                <ul class="list-unstyled mb-3">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Simple to use</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Fast brewing time</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Compact design</li>
+                </ul>
+                <a href="#" class="btn btn-primary w-100">Learn more</a>
+              </div>
             </div>
+          </div>
 
-            <!-- Coffee Machine 2 -->
-            <div class="col">
-                <div class="card product-card h-100 d-flex flex-column">
-                    <img src="images/machine_eliteX7.jpg" class="card-img-top" alt="Elite X7">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h5 class="card-title mb-0">Elite X7</h5>
-                            <span class="badge bg-primary text-white">1499 €</span>
-                        </div>
-                        <p class="card-text">An advanced coffee machine for busy offices. Great for medium-sized teams.</p>
-                        <p class="fw-semibold mb-2">Capacity: 150 cups/day</p>
-                        <ul class="list-unstyled mb-3">
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Stainless steel design</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Automatic cleaning</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Multiple drink options</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary w-100">Learn more</a>
-                    </div>
+          <!-- Coffee Machine 2 -->
+          <div class="col">
+            <div class="card product-card h-100 d-flex flex-column">
+              <img src="images/machine_eliteX7.jpg" class="card-img-top" alt="Elite X7">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h5 class="card-title mb-0">Elite X7</h5>
+                  <span class="badge bg-primary text-white">1499 €</span>
                 </div>
+                <p class="card-text">An advanced coffee machine for busy offices. Great for medium-sized teams.</p>
+                <p class="fw-semibold mb-2">Capacity: 150 cups/day</p>
+                <ul class="list-unstyled mb-3">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Stainless steel design</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Automatic cleaning</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Multiple drink options</li>
+                </ul>
+                <a href="#" class="btn btn-primary w-100">Learn more</a>
+              </div>
             </div>
+          </div>
 
-            <!-- Coffee Machine 3 -->
-            <div class="col">
-                <div class="card product-card h-100 d-flex flex-column">
-                    <img src="images/machine_premium3000.jpg" class="card-img-top" alt="Premium Plus Coffee Machine">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h5 class="card-title mb-0">Premium Plus 3000</h5>
-                            <span class="badge bg-primary text-white">3299 €</span>
-                        </div>
-                        <p class="card-text">A high-end machine for exceptional coffee. Perfect for large companies.</p>
-                        <p class="fw-semibold mb-2">Capacity: 250 cups/day</p>
-                        <ul class="list-unstyled mb-3">
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ceramic grinder</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Interactive touch screen</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Advanced customization options</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary w-100">Learn more</a>
-                    </div>
+          <!-- Coffee Machine 3 -->
+          <div class="col">
+            <div class="card product-card h-100 d-flex flex-column">
+              <img src="images/machine_premium3000.jpg" class="card-img-top" alt="Premium Plus Coffee Machine">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h5 class="card-title mb-0">Premium Plus 3000</h5>
+                  <span class="badge bg-primary text-white">3299 €</span>
                 </div>
+                <p class="card-text">A high-end machine for exceptional coffee. Perfect for large companies.</p>
+                <p class="fw-semibold mb-2">Capacity: 250 cups/day</p>
+                <ul class="list-unstyled mb-3">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ceramic grinder</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Interactive touch screen</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Advanced customization options</li>
+                </ul>
+                <a href="#" class="btn btn-primary w-100">Learn more</a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
 
-      <!-- Kaffeparty -->
+      <!-- Coffee party -->
       <div class="tab-pane fade" id="coffeeparty" role="tabpanel" aria-labelledby="coffeeparty-tab">
-        <h2 class="section-header mb-4" style="color: #6f4e37; border-bottom: 2px solid #c19a6b; padding-bottom: 10px;">
+        <h2 class="section-header mb-4">
           Our Coffee Party Packages</h2>
         <p class="mb-4">Discover our unique Kaffeparty concept for businesses and individuals. A guided coffee tasting
           experience led by our experts, paired with fine chocolates and artisan pastries.</p>
@@ -196,7 +198,8 @@
               <img src="https://picsum.photos/id/292/600/400" class="card-img-top" alt="Business Kaffeparty">
               <div class="card-body">
                 <h3 class="text-center mb-3">For Businesses</h3>
-                <p>Enjoy a complete coffee experience tailored to your business needs, with expert-led tastings and fine
+                <p>Enjoy a complete coffee experience tailored to your business needs, with expert-led tastings and
+                  fine
                   chocolates.</p>
 
                 <div class="accordion mb-4" id="businessParty">
@@ -227,8 +230,8 @@
         </div>
       </div>
     </div>
-  </main>
 
+  </main>
 
 
 
@@ -241,28 +244,7 @@
     </div>
   </footer>
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
