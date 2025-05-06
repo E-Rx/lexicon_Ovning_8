@@ -47,19 +47,19 @@
     }
 
     .nav-pills .nav-link {
-  color: #fff;
-  background-color: rgba(120, 86, 62, 0.7);
-  margin: 0 5px;
-}
+      color: #fff;
+      background-color: rgba(120, 86, 62, 0.7);
+      margin: 0 5px;
+    }
 
-.nav-pills .nav-link.active {
-  background-color: #5a3929;
-}
+    .nav-pills .nav-link.active {
+      background-color: #5a3929;
+    }
 
 
     .card-img-top {
       height: 200px;
-      object-fit: contain;
+      object-fit: cover;
       background-color: #fff;
     }
   </style>
@@ -102,26 +102,27 @@
     </nav>
   </header>
 
-<!-- Hero Section -->
-<div class="hero-section text-center text-white py-5">
-  <div class="container py-5">
-    <h1 class="display-4 mb-4">Our Products and Services</h1>
+  <!-- Hero Section -->
+  <div class="hero-section text-center text-white py-5">
+    <div class="container py-5">
+      <h1 class="display-4 mb-4">Our Products and Services</h1>
 
-    <!-- Tab nav -->
-    <ul class="nav nav-pills justify-content-center" id="productsTabs" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="machines-tab" data-bs-toggle="pill" data-bs-target="#machines" type="button"
-          role="tab" aria-controls="machines" aria-selected="true">Coffee Machines</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="coffeeparty-tab" data-bs-toggle="pill" data-bs-target="#coffeeparty" type="button"
-          role="tab" aria-controls="coffeeparty" aria-selected="false">Coffee Party</button>
-      </li>
-    </ul>
+      <!-- Tab nav -->
+      <ul class="nav nav-pills justify-content-center" id="productsTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="machines-tab" data-bs-toggle="pill" data-bs-target="#machines"
+            type="button" role="tab" aria-controls="machines" aria-selected="true">Coffee Machines</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="coffeeparty-tab" data-bs-toggle="pill" data-bs-target="#coffeeparty"
+            type="button" role="tab" aria-controls="coffeeparty" aria-selected="false">Coffee Party</button>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
 
-
+  <!-- Main content -->
+  <main class="container py-5">
     <!-- Tab content -->
     <div class="tab-content" id="productsTabContent">
       <!-- Coffee Machines -->
@@ -130,6 +131,7 @@
           Our Coffee Machines</h2>
         <p class="mb-4">Discover our selection of professional coffee machines for businesses. All our machines come
           with a 2-year warranty and maintenance service included.</p>
+
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <!-- Coffee Machine 1 -->
@@ -207,20 +209,16 @@
           experience led by our experts, paired with fine chocolates and artisan pastries.</p>
 
         <div class="row">
+
           <!-- Business Packages -->
           <div class="col-md-6 mb-4">
             <div class="card shadow-sm">
-              <img src="images/business.jpg" class="card-img-top" alt="Business Kaffeparty">
+              <img src="images/business.jpg" class="card-img-top" alt="Business Coffee Party">
               <div class="card-body">
                 <h3 class="text-center mb-3">For Businesses</h3>
                 <p>Enjoy a complete coffee experience tailored to your business needs, with expert-led tastings and
                   fine
                   chocolates.</p>
-
-                <div class="accordion mb-4" id="businessParty">
-                  <!-- Accordion items for business -->
-                </div>
-
                 <a href="#" class="btn btn-primary w-100">Request a business quote</a>
               </div>
             </div>
@@ -229,15 +227,10 @@
           <!-- Individual Packages -->
           <div class="col-md-6 mb-4">
             <div class="card shadow-sm">
-              <img src="images/individual.jpg" class="card-img-top" alt="Individual Kaffeparty">
+              <img src="images/individual.jpg" class="card-img-top " alt="Individual Coffee Party">
               <div class="card-body">
                 <h3 class="text-center mb-3">For Individuals</h3>
                 <p>Personalized coffee tasting experiences for individuals, with a focus on quality and enjoyment.</p>
-
-                <div class="accordion mb-4" id="privateParty">
-                  <!-- Accordion items for individuals -->
-                </div>
-
                 <a href="#" class="btn btn-primary w-100">Request a quote</a>
               </div>
             </div>
@@ -247,6 +240,7 @@
       </div>
 
     </div>
+
   </main>
 
 
