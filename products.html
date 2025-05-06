@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaffepartner - Products</title>
+  <title>Maison Rochaix - Products</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
@@ -39,16 +39,28 @@
     }
 
     .hero-section {
-      background-image: url('/images/coffee_field.jpg');
+      background-image: url('/images/coffee_back.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
 
     }
 
+    .nav-pills .nav-link {
+  color: #fff;
+  background-color: rgba(120, 86, 62, 0.7);
+  margin: 0 5px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #5a3929;
+}
+
+
     .card-img-top {
       height: 200px;
-      object-fit: cover;
+      object-fit: contain;
+      background-color: #fff;
     }
   </style>
 
@@ -90,14 +102,13 @@
     </nav>
   </header>
 
+<!-- Hero Section -->
+<div class="hero-section text-center text-white py-5">
+  <div class="container py-5">
+    <h1 class="display-4 mb-4">Our Products and Services</h1>
 
-
-  <!-- Main content -->
-  <main class="container py-5">
-    <h1 class="text-center mb-5">Our Products and Services</h1>
-
-    <!-- Tab navigation -->
-    <ul class="nav nav-pills mb-4 justify-content-center" id="productsTabs" role="tablist">
+    <!-- Tab nav -->
+    <ul class="nav nav-pills justify-content-center" id="productsTabs" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="machines-tab" data-bs-toggle="pill" data-bs-target="#machines" type="button"
           role="tab" aria-controls="machines" aria-selected="true">Coffee Machines</button>
@@ -107,12 +118,15 @@
           role="tab" aria-controls="coffeeparty" aria-selected="false">Coffee Party</button>
       </li>
     </ul>
+  </div>
+</div>
+
 
     <!-- Tab content -->
     <div class="tab-content" id="productsTabContent">
       <!-- Coffee Machines -->
       <div class="tab-pane fade show active" id="machines" role="tabpanel" aria-labelledby="machines-tab">
-        <h2 class="section-header mb-4">
+        <h2 class="section-header mt-5 mb-5">
           Our Coffee Machines</h2>
         <p class="mb-4">Discover our selection of professional coffee machines for businesses. All our machines come
           with a 2-year warranty and maintenance service included.</p>
@@ -180,22 +194,23 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
 
       <!-- Coffee party -->
       <div class="tab-pane fade" id="coffeeparty" role="tabpanel" aria-labelledby="coffeeparty-tab">
-        <h2 class="section-header mb-4">
+        <h2 class="section-header mb-5 mt-5">
           Our Coffee Party Packages</h2>
-        <p class="mb-4">Discover our unique Kaffeparty concept for businesses and individuals. A guided coffee tasting
+        <p class="mb-4">Discover our unique Coffee Party concept for businesses and individuals. A guided coffee tasting
           experience led by our experts, paired with fine chocolates and artisan pastries.</p>
 
         <div class="row">
           <!-- Business Packages -->
           <div class="col-md-6 mb-4">
             <div class="card shadow-sm">
-              <img src="https://picsum.photos/id/292/600/400" class="card-img-top" alt="Business Kaffeparty">
+              <img src="images/business.jpg" class="card-img-top" alt="Business Kaffeparty">
               <div class="card-body">
                 <h3 class="text-center mb-3">For Businesses</h3>
                 <p>Enjoy a complete coffee experience tailored to your business needs, with expert-led tastings and
@@ -214,7 +229,7 @@
           <!-- Individual Packages -->
           <div class="col-md-6 mb-4">
             <div class="card shadow-sm">
-              <img src="https://picsum.photos/id/344/600/400" class="card-img-top" alt="Individual Kaffeparty">
+              <img src="images/individual.jpg" class="card-img-top" alt="Individual Kaffeparty">
               <div class="card-body">
                 <h3 class="text-center mb-3">For Individuals</h3>
                 <p>Personalized coffee tasting experiences for individuals, with a focus on quality and enjoyment.</p>
@@ -227,16 +242,17 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
-    </div>
 
+    </div>
   </main>
 
 
 
   <!-- Footer -->
-  <footer class="py-4 text-center text-white">
+  <footer class="py-4 text-center text-white mt-5">
     <div class="container">
       <p class="mb-1">© 2025 Maison Rochaix. All rights reserved.</p>
       <p class="mb-0">Webmaster: <a href="mailto:webmaster@maisonrochaix.se"
