@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Party- Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    .navbar,
+    .btn-custom,
+    footer {
+      background-color: #6f4e37;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .btn-custom:hover {
+      background-color: #5a3929;
+      color: white;
+    }
+
+    body {
+      background-color: #f8f9fa;
+    }
+
+    section {
+      margin-top: 120px;
+      margin-bottom: 120px;
+    }
+
+    .section-header {
+      color: #6f4e37;
+      border-bottom: 2px solid #c19a6b;
+    }
+
+    .hero-section {
+      background-image: url('/images/coffee_field.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Header with logo and navbar -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="/images/logo.png" alt="Logo" width="65" height="65"
+            class="d-inline-block align-text-top rounded-circle">
+          <span class="fs-3">Maison ROCHAIX</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero-section text-center text-white py-5">
+    <div class="container py-5">
+      <h1 class="display-4">Discover the "Coffee Party" Experience</h1>
+      <p class="lead">Premium coffee solutions for businesses and private events</p>
+      <a href="products.html" class="btn btn-light btn-lg mt-3">Our Products</a>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <main class="container py-5">
+    <!-- Who are we? -->
+    <section class="row">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="section-header pb-2 mb-4">Who Are We?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo vel metus lobortis sollicitudin.
+          Donec vestibulum erat vel libero tincidunt, in venenatis est vulputate. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae.</p>
+        <p>Cras ac sodales tellus. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et
+          malesuada fames ac turpis egestas. Integer ac magna vel ex varius rhoncus.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/who_are_we.jpg" class="img-fluid rounded shadow" alt="Our team">
+      </div>
+    </section>
+
+    <!-- What do we do? -->
+    <section class="row">
+      <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+        <h2 class="section-header pb-2 mb-4">What Do We Do?</h2>
+        <p>Nunc scelerisque augue sit amet ligula commodo tempus. Cras facilisis magna non erat pretium, eu dictum risus
+          porta. Sed luctus urna ut elit luctus, eu sagittis nulla suscipit. Donec sollicitudin at lorem vitae pulvinar.
+        </p>
+        <p> Morbi gravida massa eget odio vestibulum aliquet. Vestibulum euismod sem eu arcu facilisis, a scelerisque
+          nisi scelerisque. Suspendisse ornare aliquet varius. Quisque pharetra justo in tellus efficitur ultrices.</p>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <img src="images/what_we_do.jpg" class="img-fluid rounded shadow" alt="Our services">
+      </div>
+    </section>
+
+    <!-- Why us? -->
+    <section class="row">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <h2 class="section-header pb-2 mb-4">Why Choose Us?</h2>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin vel risus
+          feugiat, scelerisque turpis vel, commodo lorem.</p>
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-success me-2"></i>Premium
+            quality coffee</li>
+          <li class="list-group-item bg-transparent"><i
+              class="bi bi-check-circle-fill text-success me-2"></i>Exceptional customer service</li>
+          <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-success me-2"></i>Customized
+            solutions</li>
+          <li class="list-group-item bg-transparent"><i
+              class="bi bi-check-circle-fill text-success me-2"></i>Competitive pricing</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/why_us.jpg" class="img-fluid rounded shadow" alt="Our difference">
+      </div>
+    </section>
+
+    <!-- Coffee Party -->
+    <section class="mb-5">
+      <h2 class="section-header text-center pb-2 mb-4">Coffee Party, How It Works ?</h2>
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow">
+            <img src="images/booking.jpg" class="card-img-top" alt="Step 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">1. Book</h5>
+              <p class="card-text">Choose a date and location for your coffee event.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow">
+            <img src="images/customize.jpg" class="card-img-top" alt="Step 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">2. Customize</h5>
+              <p class="card-text">Select coffee varieties and accompaniments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow">
+            <img src="images/taste.jpg" class="card-img-top" alt="Step 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">3. Taste</h5>
+              <p class="card-text">Enjoy a coffee experience guided by our experts.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow">
+            <img src="images/purchase.jpg" class="card-img-top" alt="Step 4">
+            <div class="card-body text-center">
+              <h5 class="card-title">4. Purchase</h5>
+              <p class="card-text">Order your favorite coffees with a special discount.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="products.html#coffeeparty" class="btn btn-custom text-white btn-lg">Book a Coffee Party</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center text-white">
+    <div class="container">
+      <p class="mb-1">© 2025 Maison Rochaix. All rights reserved.</p>
+      <p class="mb-0">Webmaster: <a href="mailto:webmaster@maisonrochaix.se"
+          class="text-white">webmaster@maisonrochaix.se</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
